@@ -1,0 +1,52 @@
+.mayor {
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.card {
+    width: 100%; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+   
+}
+
+.card-body {
+    width: 100%; 
+    max-width: 500px; 
+    margin: auto;
+    
+}
+
+.glass-box {
+    width: 100%; 
+    max-width: 550px; 
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+}
+
+.custom-button {
+    background-color: #F80AF8;
+    color: #fff;
+    border: #F80AF8;
+}
+.custom-button:hover {
+    background-color: #d30ad3;
+    color: #fff;
+    border: #d30ad3;
+}
+.custom-text {
+    color: #fff; 
+}
+
+.custom-text:hover {
+    color: #fff; 
+}

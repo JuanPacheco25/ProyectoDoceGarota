@@ -1,0 +1,646 @@
+  /* The Modal (background) */
+  .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    display: none;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.container-car{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.container-tabla-car{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.btn-dash{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+}
+
+.btn-car-delete {
+    padding: 5px;
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.btn-car-delete i{
+    color: #ffffff;
+    
+
+}
+
+.modal-footer{
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.btn-procesar{
+    display: flex;
+    text-align: center;
+    gap: 5px;
+    padding: 5px;
+    color: white;
+    background-color: #358cff;
+    border: 1px solid #358cff;
+    width: 80px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+.btn-car-delete:hover{
+    background-color: #ba1e2e; 
+}
+
+.btn-procesar:hover{
+    background-color: #206ed3;
+}
+
+
+
+/*** proceso de pago***/
+.seccion-perfil{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+.cont-proceso-pago{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 10px;
+}
+
+.cuadro-pago{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 500px;
+   
+    padding: 20px;
+}
+
+.items-pago{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    border-radius:8px ;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.192);
+}
+
+.desplegables-pago{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.nombre{
+   
+    font-weight:600;
+}
+.container-metodos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 8px;
+}
+.container-paypal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+
+.items-pago img{
+    width: 100px;
+}
+
+.container-metodos button{
+     background-color: transparent;
+     border: none;
+     cursor: pointer;
+}
+
+
+
+.accordion{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.accordion-item{
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+.accordion-item-title{
+    cursor: pointer;
+    padding: 10px;
+  
+    font-weight: bold;
+}
+
+.accordion-item-content{
+    display: none;
+    padding: 10px;
+}.accordion{
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+}
+
+.accordion-item{
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.accordion-item-title{
+    cursor: pointer;
+    padding: 10px;
+  
+    font-weight: bold;
+}
+
+.accordion-item-content{
+    display: none;
+    padding: 10px;
+}
+
+
+.paypal-btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    border: 1px solid  #006eff;
+    color: white;
+    padding:8px ;
+    background-color: #006eff;
+    cursor: pointer;
+}
+
+
+
+.accordion-item-title img{
+    width: 25px;
+}
+
+
+.paypal-btn:hover{
+    background-color: #0861d6;
+}
+
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    border-radius: 10px;
+    min-height: 49px;
+  }
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #d6f5fc;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+.tabcontent {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 6px 12px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.tabcontent.active{
+    display: flex;
+}
+.cont-tab{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 40px;
+}
+
+.dataTables_filter label input{
+    width: 300px;
+   /* border: none;
+    border-bottom: solid 3px black;*/
+}
+  
+.btn-primary{
+    padding: 5px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #87e9ff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+.btn-primary i{
+    color: #7ed7eb;;
+}
+.btn-primary:hover{
+    background-color: #7ed7eb;
+    border: 1px solid #7ed7eb;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+.btn-primary:hover i{
+
+ color: white;
+}
+
+
+.dataTables_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.dt-buttons{
+    display: flex;
+    gap: 10px;
+}
+
+.buttons-copy{
+    cursor: pointer;
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    background: white;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;  
+    transition: background 0.2s ;
+}
+
+.buttons-excel{
+    cursor: pointer;
+    padding: 5px;
+    color:rgb(8, 95, 0);
+    background: white;
+    border: 1px solid rgb(8, 95, 0);
+    border-radius: 5px;  
+    transition: background 0.2s ;
+}
+.buttons-pdf{
+    cursor: pointer;
+    padding: 5px;
+    color:rgb(175, 0, 0);
+    background: white;
+    border: 1px solid rgb(175, 0, 0);
+    border-radius: 5px;  
+    transition: background 0.2s ;
+}
+.buttons-print{
+    cursor: pointer;
+    padding: 5px;
+    color:rgb(41, 159, 255);
+    background: white;
+    border: 1px solid rgb(41, 159, 255);
+    border-radius: 5px;  
+    transition: background 0.2s ;
+}
+
+.buttons-copy:hover{
+   
+    color: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+
+}
+.buttons-excel:hover{
+   
+    color: rgb(255, 255, 255);
+    background: rgb(8, 95, 0);
+    border: 1px solid rgb(8, 95, 0);
+
+}
+
+.buttons-pdf:hover{
+   
+    color: rgb(255, 255, 255);
+    background: rgb(175, 0, 0);
+    border: 1px solid rgb(175, 0, 0);
+
+}
+.buttons-print:hover{
+   
+    color: rgb(255, 255, 255);
+    background: rgb(41, 159, 255);
+    border: 1px solid rgb(41, 159, 255);
+
+}
+
+.odd{
+    height: 50px;
+}
+.odd:nth-child(even) {
+    background-color: #f2f2f2; /* Fondo más claro */
+}
+  
+
+.odd:nth-child(odd) {
+    background-color: #dddddd36; /* Fondo más oscuro */
+}
+
+.dataTables_paginate {
+    display: flex;
+    gap: 10px;
+}
+.dataTables_paginate a {
+    color: white;
+}
+#tblPendientes_next,#tblPendientes_previous{
+    cursor:pointer;
+    color: white;
+    background-color: #F4FDFF;
+    border: 1px solid #F4FDFF;
+    border-radius: 10px;
+    transition: background 0.3s;
+}
+
+#tblPendientes_next:hover,#tblPendientes_previous:hover{
+    color: white;
+    background-color: #bbecf7;
+    border: 1px solid #bbecf7;
+}
+.tr-tabla-pago{
+ background-color: #F4FDFF;
+
+}
+
+.dataTables_wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#pay{
+    display: flex;
+}
+
+.paginate_button{
+    background-color: transparent;
+    border-radius: 15px;
+    border: 1px solid ;
+}
+
+/*modall*/
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-btn-cont{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+
+}
+
+.services-icon-wap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #87E9FF;
+    border-radius:15px;
+    transition: 0.3s;
+    background-color: #87E9FF;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, 
+     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+
+
+.text-success i{
+    color: white ;
+}
+
+.services-icon-wap .h2-modal{
+    color: white;
+    font-size: 20px;
+} 
+
+
+
+   /* The Modal (background) */
+   .modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    display: none;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #000000;
+    width: 80%;
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.sorting {
+    
+    text-align: center;
+}
+/*modall*/
+@media only screen and (max-width: 700px) {
+
+   #pagados-content{
+    display: flex;
+    flex-direction: column;
+   }
+   .items-pago{
+    width: 400px;
+   }
+
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .seccion-perfil{
+        margin-top: 100px;
+    }
+    .seccion-perfil{
+        flex-direction: column;
+    }
+
+
+}
+
+@media only screen and (max-width: 590px) {
+
+   .services-icon-wap{
+    width: 100px;
+    height: 100px;
+   }
+
+   .services-icon-wap .h2-modal{
+   
+    font-size: 15px;
+    }
+
+    .h2-modal{
+        font-size: 15px;
+    }
+    
+}
+#swiper-wrapper-3b3361adcda9ba74{
+    width: 50px;
+}
+.swiper-wrapper{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+

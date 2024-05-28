@@ -1,0 +1,387 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,200;0,300;0,500;0,600;1,400;1,500;1,600&family=Kanit:ital,wght@0,300;1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300&family=Roboto:wght@100;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;200;300;400;500&family=Montserrat:wght@100&display=swap');
+
+.detalle-pro{
+    display: flex;
+    gap: 40px;
+    padding: 40px;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    min-height: 100%;
+    background: #f0f0f0;
+}
+.container-detail .img_container {
+    width: 350px;
+    height: 450px;
+    margin-bottom: 20px;    
+}
+
+
+.container-detail .img_container .main_img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+    object-fit: cover;
+}
+
+.container-detail .thumbnail_container {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+.container-detail .thumbnail_container .thumbnail {
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    object-fit: cover;
+    opacity: .7;
+    transition: .3s;
+}
+
+.container-detail .thumbnail_container .thumbnail:hover {
+    opacity: 1;
+}
+
+.active2 {
+    opacity:  1 !important;
+    box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+}
+
+.info-detalle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    width: 600px;
+    padding: 20px;
+    height: 450px;
+    border-radius: 5px;
+    background-color: white;
+    
+}
+
+.data-p{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.precio-talla{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+
+.desplegado-talla{
+    display: flex;
+    gap: 10px;
+    padding: 7px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 5px 5px;
+    background-color: rgba(0, 0, 0, 0.048);
+}
+
+.btn-talla{
+    background-color: white;
+    width: 30px;
+    padding: 5px;
+    color: #95B8F6;
+    border: 1px solid #95B8F6;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+
+
+.btn-talla.active {
+    background-color: #E4EEFF; /* Cambia el color de fondo cuando el botón está activo */
+    color:#95B8F6 ; /* Cambia el color del texto cuando el botón está activo */
+}
+
+.precio-p{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.cont-cantidad{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+    align-items: center;
+ 
+}
+.title{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.separar-tallas{
+    display: flex;
+    margin-top: 5px;
+    align-items: center;
+    gap: 20px;
+}
+
+.btns-cantidad{
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    width: 100px;
+    background-color: #3881ff23;
+    border: 1px solid #95B8F6;
+    border-radius:70px ;
+}
+.btns-cantidad button{
+    margin: 5px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    
+}
+.btns-cantidad button .contador{
+    font-size: 7px;
+}
+
+.btns-cantidad button i{
+    font-size: 15px;
+}
+
+.agregar-deseos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.agregar-deseos .separar-btn{
+   display: flex;
+   gap: 10px;
+}
+
+.btn-agregar-d{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: #95B8F6;
+    border: #95B8F6 1px solid;
+    border-radius:5px;
+    color: white;
+    padding: 5px;    
+    cursor: pointer; 
+}
+
+.btn-cora:hover{
+    cursor: pointer; 
+}
+
+.btn-agregar-d:hover{
+    background: #6994df;
+    border: #6994df 1px solid;
+}
+
+
+.buy-btn{
+    background: rgb(255, 157, 29) ;
+    color: white;
+    border: 1px solid rgb(255, 157, 29) ;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.buy-btn:hover{
+    background: rgb(214, 136, 34) ;
+    color: white;
+    border: 1px solid rgb(214, 136, 34) ;
+
+}
+
+
+.agregar-deseos .separar-btn .btn-agregar-d i{
+    color: white;
+}
+
+.relacionados{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.relacionados h1{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 100%; 
+    color: #F80AF8;
+}
+
+
+
+.rating2,.rating3 {
+    display: inline-block;
+    font-size: 15px;
+}
+.rating3{
+    display: inline-block;
+    font-size: 20px;
+}
+
+.rating2,.rating3 > span {
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+.rating2,.rating3 > span.active {
+    color: gold;
+}
+.star1{
+    color: #1515151f;
+}
+
+@media (max-width: 1000px) {
+    #swiper-wrapper-a7dc92897ffc0f60{
+        width: 100%;
+    }
+  
+
+}
+
+@media only screen and (max-width: 800px) {
+
+  .detalle-pro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .info-detalle{
+    width: 400px;
+  }
+}
+
+
+.swiper {
+    width: 100%;
+}
+
+
+
+.prev-btn,
+.next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
+
+
+.cards-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 40px;
+}
+
+.calculo {
+  
+    flex: 0 0 calc(100% / 6);
+}
+
+
+#prev-btn[disabled],
+#next-btn[disabled] {
+    background-color: #aaa;
+    pointer-events: none;
+}
+.cards-slider-container {
+    position: relative;
+    position: relative;
+    overflow: hidden; /* Ocultar el contenido que desborda */
+    white-space: nowrap;
+  
+}
+
+.cards-container {
+    display: flex;
+    transition: transform 0.5s ease;
+    gap: 20px;
+}
+
+#navigation-dots {
+    display: flex;
+    justify-content: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #db34db;
+}
+
+
+
+@media only screen and (max-width: 1481px) {
+
+    .calculo{
+        flex: 0 0 calc(100% / 5);
+    }
+  }
+  
+  @media only screen and (max-width: 1231px) {
+
+    .calculo{
+        flex: 0 0 calc(100% / 4);
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+
+    .calculo{
+        flex: 0 0 calc(100% / 3);
+    }
+  }
+
+  @media only screen and (max-width: 752px) {
+
+    .calculo{
+        flex: 0 0 calc(100% / 2);
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+
+    .calculo{
+        flex: 0 0 calc(100% / 1);
+    }
+  }
+  
+  

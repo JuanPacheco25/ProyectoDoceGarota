@@ -1,0 +1,143 @@
+
+.container-list-deseo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.alerta{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background: linear-gradient(90deg,
+    rgb(229, 231, 255)0%,
+    rgb(255, 253, 255)50%,
+    rgb(255, 235, 252)100%);
+    width: 100%;
+    height: 80px;
+}
+
+.alerta h1{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: #000000;
+}
+
+.precio-art{
+    font-size: 11px;
+    font-weight: 600;
+    color: #000000;
+
+}
+
+
+
+.img-tabla-circle {
+    border-radius: 50%;
+    width: 50px; /* Ajusta el tamaño según tus necesidades */
+    height: 50px; /* Ajusta el tamaño según tus necesidades */
+    object-fit: cover; /* Ajusta el comportamiento de la imagen para que se ajuste al círculo */
+    aspect-ratio: 1/1; /* Forzar una relación de aspecto 1:1 */
+}
+
+.cantidad-p{
+    font-size: 12px;
+    color: white;
+    background-color: #358cff;
+    border: 1px solid #358cff;
+    border-radius: 5px;
+    padding: 4px;
+    width: 50px;
+
+}
+
+.nombre-deseo{
+    font-size: 15px;
+    font-weight: 600;
+    color: #343a40;
+}
+/* Estilos para la tabla */
+.custom-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.img-tabla{
+    border-radius:50% ;
+    width: 50px;
+    height: 50px; 
+    object-fit: cover; 
+    aspect-ratio: 1/1; 
+}
+
+/* Estilos para las celdas de encabezado */
+.custom-table th {
+    background-color: #aef3ff23; 
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    text-align: center;
+    padding: 12px; 
+}
+
+
+.custom-table tbody tr:nth-child(odd) {
+    background-color: #f8f9fa; 
+}
+
+
+.custom-table td {
+    text-align: center;
+    padding: 12px; 
+}
+
+/* Estilos para los botones */
+.btn-eliminar, .btnAddCart {
+    background-color: #358cff;
+    width: 50px;
+    color: white;
+    border: none;
+    padding: 8px 12px; 
+    cursor: pointer;
+    margin-top: 5px;
+    border-radius: 4px; 
+    transition: background-color 0.3s ease;
+ }
+
+.btn-eliminar:hover, .btnAddCart:hover {
+    background-color: #327cdd; 
+}
+
+/* Estilos para los botones de eliminar */
+.btnEliminarDeseo {
+    background-color: #dc3545;
+    width: 50px;
+    padding: 8px 12px; 
+    border-radius: 4px; 
+    transition: background-color 0.3s ease; 
+}
+
+.btnEliminarDeseo:hover {
+    background-color: #c82333; 
+}
+
+
+@media (max-width: 768px) {
+    .custom-table {
+        font-size: 14px;
+    }
+
+    .custom-table th,
+    .custom-table td {
+        padding: 8px;
+    }
+
+    .btn-eliminar,
+    .btnAddCart,
+    .btnEliminarDeseo {
+        padding: 6px 10px;
+    }
+}
+
+
+
+
